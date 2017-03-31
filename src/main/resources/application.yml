@@ -1,0 +1,17 @@
+server: 
+  port: 8080
+  
+spring: 
+   application:
+      name: transcode-service
+      
+aliyun:
+    transcode:
+        location: oss-cn-hangzhou
+        region-id: cn-hangzhou
+        pipeline-id: NEED_CONFIG_ALIYUN
+        transcode-template-id: NEED_CONFIG_ALIYUN
+        bucketname-voice: ORIGIN_BUCKET
+        bucketname-voice-trance: DESTINATION_BUCKET
+        access-key-id: YOUR_KEY_ID
+        access-key-secret: YOUR_KEY_SECRET
